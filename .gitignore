@@ -9,6 +9,9 @@ __pycache__/
 # env
 .venv
 
+# static files
+static/banner.jpg
+
 # Distribution / packaging
 .Python
 build/

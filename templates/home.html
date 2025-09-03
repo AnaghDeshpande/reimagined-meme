@@ -15,6 +15,7 @@
             width: 100%;
             height: 360px:
             object-fit: cover;
+            margin-bottom: 24px;
         }
 
         h2 {
@@ -36,16 +37,22 @@
     </style>
 </head>
 <body>
+    <img class="img-fluid" id="banner" src="static/banner.jpg" alt="some random image" height="320">
+     {% include 'navbar.html' %}
     <div class="container">
-
+       
         <h1 class="text-center mt-2 mb-4">Jovian Careers</h1>
-        <img class="img-fluid" id="banner" src="static/banner.jpg" alt="some random image" height="320">
-
-        <h2 class="text-center mt-2 mb-4">About Jovian</h2>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error maxime debitis nihil 
-        quisquam nesciunt dicta iste eius quod rerum, magni dolorem, laudantium cum sit quia? Vel 
-        quos non blanditiis repudiandae?</p>
-
+        
+        <div class="row">
+            <div class="col-md-6">
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error maxime debitis nihil 
+                quisquam nesciunt dicta iste eius quod rerum, magni dolorem, laudantium cum sit quia? Vel 
+                quos non blanditiis repudiandae?</p>
+            </div>
+            <div class="d-none d-md-block col-md-6">
+                <img src="static/people.jpg" alt="people" style="height:320px;border-radius:8px"> 
+            </div
+        </div>
         <h2 class="text-center mt-2 mb-4">Open Positions</h2>
         <div>
             {% for job in jobs %}

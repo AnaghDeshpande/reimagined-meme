@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jovian Careeres</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        h1 {
+            font-size: 40px;
+            font-family: Roboto;
+            font-weight: normal;
+            text-align: center;
+        }
+        #banner {
+            width: 100%;
+            height: 360px:
+            object-fit: cover;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-family: Roboto;
+            font-weight: normal;
+            text-align: center;
+        }
+        .bodytext {
+            font-size: 20px;
+            font-family: Roboto;
+            font-weight: normal;
+            text-align: center;
+        }
+        #container {
+            width: 720px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1 class="text-center mt-2 mb-4">Jovian Careers</h1>
+        <img class="img-fluid" id="banner" src="static/banner.jpg" alt="some random image" height="320">
+
+        <h2 class="text-center mt-2 mb-4">About Jovian</h2>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error maxime debitis nihil 
+        quisquam nesciunt dicta iste eius quod rerum, magni dolorem, laudantium cum sit quia? Vel 
+        quos non blanditiis repudiandae?</p>
+
+        <h2 class="text-center mt-2 mb-4">Open Positions</h2>
+        <div>
+            {% for job in jobs %}
+                {% include 'jobitem.html' %}
+            {% endfor %}
+        </div>
+
+        <div class="text-center">
+            <button class="btn btn-primary btn-lg">Contact Us</button>
+            <p>Copyright 2025, Jovian</p>
+        </div>
+
+    </div>
+</body>
+</html>

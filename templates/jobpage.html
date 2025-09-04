@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    {% include "bootstrap.html" %}
+    <title>{{job['title']}} page</title>
+</head>
+<body>
+    {% include "banner.html" %}
+    {% include 'navbar.html' %}
+
+    <div class="container">
+
+        <h1 class="text-center mt-2 mb-4">Jovian Careers</h1>
+        <h3>Title :</h3>
+        <p>{{job['title']}}</p>
+        <h3>Location :</h3>
+        <p>{{job['location']}}</p>
+        <h3>Salary :</h3>
+        <p>{{ job.currency }} {{job['salary']}}</p>
+        <h3>Responsibilities :</h3>
+        {% for line in job['responsibities'].replace('\\n', '\n').splitlines() %}
+            <li>{{line}}</li>
+        {% endfor %}
+        <h3>Requirements :</h3>
+        {% for line in job['requirements'].replace('\\n', '\n').splitlines() %}
+            <li>{{line}}</li>
+        {% endfor %}
+        
+    </div>  
+
+    {% include "footer.html"%}
+</body>
+</html>

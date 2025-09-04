@@ -1,44 +1,10 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jovian Careeres</title>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <style>
-        h1 {
-            font-size: 40px;
-            font-family: Roboto;
-            font-weight: normal;
-            text-align: center;
-        }
-        #banner {
-            width: 100%;
-            height: 360px:
-            object-fit: cover;
-            margin-bottom: 24px;
-        }
-
-        h2 {
-            font-size: 30px;
-            font-family: Roboto;
-            font-weight: normal;
-            text-align: center;
-        }
-        .bodytext {
-            font-size: 20px;
-            font-family: Roboto;
-            font-weight: normal;
-            text-align: center;
-        }
-        #container {
-            width: 720px;
-            margin: 0 auto;
-        }
-    </style>
+    {% include "bootstrap.html" %}
 </head>
 <body>
-    <img class="img-fluid" id="banner" src="static/banner.jpg" alt="some random image" height="320">
-     {% include 'navbar.html' %}
+    {% include "banner.html" %}
+    {% include 'navbar.html' %}
     <div class="container">
        
         <h1 class="text-center mt-2 mb-4">Jovian Careers</h1>

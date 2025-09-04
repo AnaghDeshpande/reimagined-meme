@@ -13,25 +13,52 @@
         Career Portal
       </h1>
 
-      <p>Your application for the role of <b>{{job['title']}}</b> at Career Portal has been submitted!</p>
-      
-      <b>Full Name</b>
-      <div class="mb-2">{{application['full_name']}}</div>
-  
-      <b>Email</b>
-      <div class="mb-2">{{application['email']}}</div>
-  
-      <b>LinkedIn URL</b>
-      <div class="mb-2">{{application['linkedin_url']}}</div>
-  
-      <b>Education</b>
-      <div class="mb-2">{{application['education']}}</div>
-  
-      <b>Work Experience</b>
-      <div class="mb-2">{{application['work_experience']}}</div>
-  
-      <b>Resume URL</b>
-      <div class="mb-2">{{application['resume_url']}}</div>
+      <div class="alert alert-success">
+        <p>Your application for the role of <b>{{ job['title'] }}</b> at Career Portal has been submitted successfully!</p>
+      </div>
+
+      <div class="mb-3 row">
+        <label class="col-md-2 col-form-label"><b>Full Name</b></label>
+        <div class="col-md-6 pt-2">
+          {{ application['full_name'] }}
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <label class="col-md-2 col-form-label"><b>Email</b></label>
+        <div class="col-md-6 pt-2">
+          {{ application['email'] }}
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <label class="col-md-2 col-form-label"><b>LinkedIn URL</b></label>
+        <div class="col-md-6 pt-2">
+          <a href="{{ application['linkedin_url'] }}" target="_blank">{{ application['linkedin_url'] }}</a>
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <label class="col-md-2 col-form-label"><b>Education</b></label>
+        <div class="col-md-6 pt-2">
+          {{ application['education'] }}
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <label class="col-md-2 col-form-label"><b>Work Experience</b></label>
+        <div class="col-md-6 pt-2">
+          {{ application['work_experience'] }}
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <label class="col-md-2 col-form-label"><b>Resume URL</b></label>
+        <div class="col-md-6 pt-2">
+          <a href="{{ application['resume_url'] }}" target="_blank">{{ application['resume_url'] }}</a>
+        </div>
+      </div>
+
     </div>
     {% include 'footer.html' %}
   </body>

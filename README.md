@@ -1,1 +1,3 @@
-# reimagined-meme
+# Career-Portal
+
+Our career website is designed to bridge the gap between talented professionals and exciting job opportunities. Built with a modern, user-friendly interface, the platform allows candidates to seamlessly browse, apply, and track job openings across multiple domains. Employers can post detailed job listings with specific requirements and responsibilities, while applicants can showcase their skills, education, and experience through structured applications. With integrated resume uploads, LinkedIn links, and application tracking, the process is smooth, efficient, and transparent. Our platform provides a space where you can explore opportunities, highlight your strengths, and connect with the right employers. This website isn’t just a job board — it’s a complete career platform that empowers applicants and recruiters alike by simplifying recruitment and ensuring the best matches for both sides.
